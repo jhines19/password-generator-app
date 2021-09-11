@@ -31,42 +31,23 @@
 
             <div class="card-footer">
                 <footer>
-                    <button id="generate" class="btn">Generate Password</button>
+                    <button id="generate" class="btn" onclick="generatePassword()">Generate Password</button>
                 </footer>
             </div>
             
       </div>
     </div>
+
+    <!-- going the form route if there is time: 
+      <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form> -->
+
     <script src="script.js"></script>
   </body>
 </html>
-
-
-<!-- 
-Epic:
-    -I WANT to randomly generate a password that meets certain criteria
-    SO THAT I can create a strong password that provides greater security
-    -I need a new, secure password WHEN I click the button to generate a password
-
-Password that meets certain criteria :
-    -password that meets certain criteria
-
-Button click :
-    -I am presented with a series of prompts for password criteria
-    -I then select which criteria to include in the password
-
-Criteria Prompts:
-
-    -Length: when prompted for the length of the password
-    I choose a length of at least 8 characters and no more than 128 characters
-    -Character Types: when asked for character types to include in the password
-    I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-
-Input response given:
-    -Individual response given: when I answer each prompt then my input should be validated and at least one character type should be selected
-    -All responses given: a password is generated that matches the selected criteria
-
-Display the accepted password:
-    -when the password is generated then the password is either displayed in an alert or written to the page
-
- -->
