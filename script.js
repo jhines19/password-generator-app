@@ -68,20 +68,30 @@ function generatePassword() {
     }
   }
 
-  successfulPassword.join('');
   
   // console.log(successfulPassword);
   
 
-  
-  // Now I just need to choose from it randomly indices
+  // Spitting out 1 char
+  // TODO - make it spit out multiple Chars ; lengthPrompt amount to be exact 
+  newPasswordChar = successfulPassword[Math.floor(Math.random() * (successfulPassword.length) * lengthPrompt)]
+  console.log(newPasswordChar);
 
-  var index = Math.floor(Math.random() * lengthPrompt);
-  var randomPassword = successfulPassword[index];
+
+
+  
+  
+  // randomPassword.join('');
+
+  //showing one random index
+  //what we need is for it to select lengthPrompt amount of indexes from whole..
+  //successfulPassword array
+  //and give me that
   // console.log(randomPassword);
 
   
-  return successfulPassword;
+  
+  return newPasswordChar;
 }
 
 //once I'm done with all my criteria prompts, I want it to display what?
