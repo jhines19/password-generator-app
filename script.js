@@ -69,15 +69,46 @@ function generatePassword() {
   }
 
   
-  // console.log(successfulPassword);
+  console.log(successfulPassword);
   
 
-  // Spitting out 1 char
-  // TODO - make it spit out multiple Chars ; lengthPrompt amount to be exact 
-  newPasswordChar = successfulPassword[Math.floor(Math.random() * (successfulPassword.length) * lengthPrompt)]
-  console.log(newPasswordChar);
+  // random, holds an equation that produces a completely randomized index from my array.
+  // so random = a random index in my successfulPassword array
+
+  //storing the input from lengthPrompt var
+  var length = lengthPrompt;
+  console.log(length);
+
+  //random index of successfulPassword array
+  var random = Math.floor(Math.random() * successfulPassword.length) * length;
+  //picking a random character, based on the index chosen by random
+  var passwordChar = successfulPassword[random];
+  console.log(passwordChar)
 
 
+  // An array of values.
+  // I need those values. Randomly.
+  // I'm getting one value from the array.
+
+  //I need to get more than one. how?
+
+  // passwordHolder = [random * length]
+
+  // random.toString()
+  
+
+  // var newPassword = successfulPassword[random]
+
+
+  // while (newPassword < lengthPrompt) {
+  //   newPassword++
+  // }
+
+  //the value that comes out of this is not always a number, so you can multiply G by 8
+  //We just need to get 8 values our of the array. Not just 1
+  //So we get the successfulPassword character
+  //We need to get 8 more
+  //do newPassword 8 times
 
   
   
@@ -90,11 +121,12 @@ function generatePassword() {
   // console.log(randomPassword);
 
   
-  
-  return newPasswordChar;
+  console.log(generatePassword);
+  return generatePassword;
 }
 
 //once I'm done with all my criteria prompts, I want it to display what?
+// //photo in phone, generatePassword value will display basically.
 
 
 
@@ -115,8 +147,6 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
- // confirms, instead of prompts, for the following and adding them to lengthPrompt^
-  // if the user hit true or false then they get sent
   // random generation of password from all these choices ^
   // finding random value for each of these ^
   // we need to feed successfulPassword based on true vs false
@@ -126,7 +156,6 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-// //photo in phone, generatePassword value will display basically.
 
 
 
