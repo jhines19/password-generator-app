@@ -1,5 +1,5 @@
 function generatePassword() {
-  var passwordCharacters = " !”#$%&’()*+,-./:;<=>?@[0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var passwordCharacters = " !”#$%&’()*+,-./:;<=>?@[]^_`{|}~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var newPassword = ""
 
   //password length input prompt
